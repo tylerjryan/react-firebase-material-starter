@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.6.2",
+    "@material-ui/icons": "^3.0.1",
     "firebase": "^5.6.0",
+    "jss": "^9.8.7",
+    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-firebaseui": "^3.1.2",
+    "react-jss": "^8.6.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
     "recompose": "^0.30.0"
@@ -33,7 +38,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint-config-react-app": "^3.0.5",
-    "standard": "^12.0.1"
+    "eslint-config-react-app": "^3.0.5"
   }
 }
