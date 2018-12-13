@@ -12,10 +12,16 @@
     "recompose": "^0.30.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start;",
+    "build": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts build'",
+    "build:dev": "REACT_APP_ENV=development yarn build",
+    "build:prod": "REACT_APP_ENV=production yarn build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "shipit": "yarn build; yarn deploy",
+    "shipit:dev": "yarn build:dev; yarn deploy",
+    "shipit:prod": "yarn build:prod; yarn deploy",
+    "deploy": "firebase deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
