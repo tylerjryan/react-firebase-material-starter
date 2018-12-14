@@ -18,13 +18,14 @@ const styles = theme => ({
     }
   },
   paper: {
-    padding: theme.spacing.unit * 10,
     overflowY: 'auto',
     [theme.breakpoints.up('sm')]: {
+      padding: theme.spacing.unit * 10,
       height: 'calc(100% - 10px)',
       marginTop: 5
     },
     [theme.breakpoints.down('xs')]: {
+      padding: theme.spacing.unit * 2,
       height: '100%'
     }
   },
@@ -70,8 +71,8 @@ class Body extends Component {
 
     return (
       <Grid container className={classes.container}>
-        <Grid item xs={false} sm={3} />
-        <Grid item xs={false} sm={6}>
+        <Grid item xs={false} sm={false} md={3} />
+        <Grid item xs={12} sm={12} md={6}>
           <Dialog open={open} onClose={this.handleClose}>
             <DialogTitle>Super Secret Password</DialogTitle>
             <DialogContent>
@@ -110,7 +111,7 @@ class Body extends Component {
             </Button>
           </Paper>
         </Grid>
-        <Grid item xs={false} sm={3} />
+        <Grid item xs={false} sm={false} md={3} />
       </Grid>
     )
   }
