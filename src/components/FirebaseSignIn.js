@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
 
-import { withFirebase } from './Firebase';
-import { withRouter } from 'react-router-dom';
+import { withFirebase } from './Firebase'
+import { withRouter } from 'react-router-dom'
 import { compose } from 'recompose'
 
-import * as ROUTES from '../constants/routes';
+import * as ROUTES from '../constants/routes'
 
 const INITIAL_STATE = {}
 
 class FirebaseSignInBase extends Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
 
     this.state = { ...INITIAL_STATE }
 
@@ -44,18 +44,18 @@ class FirebaseSignInBase extends Component {
     }
   }
 
-  render() {
-    const uiConfig = this.uiConfig;
+  render () {
+    const uiConfig = this.uiConfig
 
     return (
       <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={this.props.firebase.auth} />
-    );
+    )
   }
 }
 
 const FirebaseSignIn = compose(
-    withRouter,
-    withFirebase
-)(FirebaseSignInBase);
+  withRouter,
+  withFirebase
+)(FirebaseSignInBase)
 
-export default FirebaseSignIn;
+export default FirebaseSignIn
