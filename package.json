@@ -18,9 +18,10 @@
   },
   "scripts": {
     "start": "react-scripts start;",
-    "build": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts build'",
-    "build:dev": "REACT_APP_ENV=development yarn build",
-    "build:prod": "REACT_APP_ENV=production yarn build",
+    "build": "react-scripts build",
+    "build:env": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts build'",
+    "build:dev": "REACT_APP_ENV=development yarn build:env",
+    "build:prod": "REACT_APP_ENV=production yarn build:env",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "shipit": "yarn build; yarn deploy",
