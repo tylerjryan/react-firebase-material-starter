@@ -13,6 +13,8 @@ import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 import withStyles from '@material-ui/core/styles/withStyles'
 
+import FirebaseSignIn from './FirebaseSignIn'
+
 const styles = theme => ({
   main: {
     width: 'auto',
@@ -80,6 +82,7 @@ const SignIn = props => {
           >
             Sign in
           </Button>
+          <FirebaseSignIn />
         </form>
       </Paper>
     </main>
