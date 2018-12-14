@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 
 import * as serviceWorker from './serviceWorker'
 
+import Firebase, { FirebaseContext } from './components/Firebase'
+
 import App from './components/App'
 
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -16,7 +18,7 @@ const theme = createMuiTheme({
     type: 'light'
   },
   spacing: {
-    unit: 12 
+    unit: 12
   },
   typography: {
     useNextVariants: true
@@ -25,8 +27,10 @@ const theme = createMuiTheme({
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>
-    <CssBaseline />
-    <App />
+    <FirebaseContext.Provider value={new Firebase()}>
+      <CssBaseline />
+      <App />
+    </FirebaseContext.Provider>
   </MuiThemeProvider>,
   document.getElementById('root')
 )
