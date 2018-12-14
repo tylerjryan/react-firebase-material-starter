@@ -12,14 +12,11 @@ A full-stack web application starter template that extends [Create React App](ht
 - Dev/prod configuration
 - ESLint configuration
 
-The starter template for this project, created by Tyler Ryan. It is an extension of Create React App. To learn more, check out the [repository](https://github.com/tylerjryan/react-firebase-material-starter).
-This project was bootstrapped with [React Firebase Material Starter](https://github.com/tylerjryan/react-firebase-material-starter) by Tyler Ryan.
-
 ---
 
 ## Getting Started
 
-The intended usage of the repo is to clone it as a starting point for a new project.
+The intended usage of this repo is to clone it as a starting point for a new project.
 
 Here are the recommended getting started steps:
 
@@ -319,11 +316,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### Create React App
 
-Create React App provided the original starter template for [React Firebase Material Starter](https://github.com/tylerjryan/react-firebase-material-starter), which was used as the foundation of this project. You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Create React App provided the original starter template for React Firebase Material Starter, and was used as the foundation of this project. You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 ### ReactJS
 
-ReactJS is the User Interface Framework upon which this application is built. To learn React, check out the [React documentation](https://reactjs.org/).
+ReactJS is the User Interface Framework upon which the application is built. To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Firebase
 
