@@ -16,7 +16,7 @@ const theme = createMuiTheme({
     type: 'light'
   },
   spacing: {
-    unit: 8
+    unit: 12 
   },
   typography: {
     useNextVariants: true

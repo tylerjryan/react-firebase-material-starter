@@ -1,5 +1,10 @@
 import React, { Component, Fragment } from 'react'
-import HomePage from './Home'
+import Home from './Home'
+import SignUp from './SignUp'
+import SignIn from './SignIn'
+import Account from './Account'
+import PasswordForgot from './PasswordForgot'
+import Admin from './Admin'
 
 import {
   BrowserRouter as Router,
@@ -12,12 +17,14 @@ class App extends Component {
   render () {
     return (
       <Router>
-        <Route exact path={ROUTES.HOME} component={HomePage} />
-        {/* <Route exact path={ROUTES.SIGN_UP} component={SignUpPage} />
-        <Route exact path={ROUTES.SIGN_IN} component={SignInPage} />
-        <Route exact path={ROUTES.ACCOUNT} component={AccountPage} />
-        <Route exact path={ROUTES.PASSWORD_FORGOT} component={PasswordForgotPage} />
-        <Route exact path={ROUTES.ADMIN} component={AdminPage} /> */}
+        <Fragment>
+          <Route exact path={ROUTES.HOME} component={Home} />
+          <Route exact path={ROUTES.SIGN_UP} component={SignUp} />
+          <Route exact path={ROUTES.SIGN_IN} component={SignIn} />
+          <Route exact path={ROUTES.ACCOUNT} component={Account} />
+          <Route exact path={ROUTES.PASSWORD_FORGOT} component={PasswordForgot} />
+          <Route exact path={ROUTES.ADMIN} component={Admin} />
+        </Fragment>
       </Router>
     )
   }

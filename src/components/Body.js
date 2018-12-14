@@ -11,7 +11,7 @@ import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 
-const styles = theme => ({
+const styles = theme => console.log(theme) || ({
   '@global': {
     'html, body, #root': {
       height: '100%'
@@ -41,6 +41,9 @@ const styles = theme => ({
     [theme.breakpoints.down('xs')]: {
       height: '50%'
     }
+  },
+  button: {
+    margin: theme.spacing.unit
   }
 })
 
@@ -86,6 +89,24 @@ class Body extends Component {
             </Typography>
             <Button variant='contained' color='secondary' onClick={this.handleClick}>
               This is a Dialog
+            </Button>
+            <Typography variant='subtitle1' gutterBottom>
+              Here are some routes for you:
+            </Typography>
+            <Button className={classes.button} variant='contained' color='primary' href='/signup'>
+              Sign Up
+            </Button>
+            <Button className={classes.button} variant='contained' color='primary' href='/signin'>
+              Sign In
+            </Button>
+            <Button className={classes.button} variant='contained' color='primary' href='/account'>
+              Account
+            </Button>
+            <Button className={classes.button} variant='contained' color='primary' href='/pw-forgot'>
+              Password Forgot
+            </Button>
+            <Button className={classes.button} variant='contained' color='primary' href='/admin'>
+              Admin
             </Button>
           </Paper>
         </Grid>
