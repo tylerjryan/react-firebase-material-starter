@@ -11,7 +11,7 @@ import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 
-const styles = theme => console.log(theme) || ({
+const styles = theme => ({
   '@global': {
     'html, body, #root': {
       height: '100%'
