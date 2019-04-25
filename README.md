@@ -155,7 +155,7 @@ firebase use dev
 ### this is equivalent to:
 firebase use default
 
-### You can also available aliases:
+### You can also list available aliases:
 firebase use
 ```
 
