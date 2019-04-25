@@ -34,6 +34,7 @@ Here are those steps written out in a single flow:
 git clone git@github.com:tylerjryan/react-firebase-material-starter.git <project-name>
 cd <project-name>
 rm -rf .git
+git init
 git add .
 git commit -m "Initial commit from React Firebase Material Starter"
 yarn
