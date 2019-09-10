@@ -330,3 +330,7 @@ Firebase is setup to provide the backend for the application. To learn more abou
 ### Material-UI
 
 The React UI Component Library built on Google's Material Design. It provides an extensive set of components and theming capabilites that greatly simplify the process of building a high-quality, responsive application. To learn more, check out the [documentation](https://material-ui.com/).
+
+### Additional Information
+
+The code located in `/src/components/Firebase/` and `/src/components/Session/` was based on [A Firebase in React Tutorial for Beginners](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial) tutorial by Robin Wieruch. This is a fantastic tutorial for understanding how to use Firebase with ReactJS, while learning more about ReactJS in the process.
